@@ -1,6 +1,6 @@
 import random
 
-possible_words = ["Beach", "Happy", "Dream", "Faith", "Extra"] 
+possible_words = ["beach", "happy", "dream", "faith", "extra"] 
 
 word = random.choice(possible_words)
 
@@ -11,6 +11,7 @@ yellow = '\033[33m'
 
 def generate_hint(user_guess):
     color = default
+    hint = ""
     for i in range(5):
         if (user_guess[i] == word[i]):
             color = green
